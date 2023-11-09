@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+<style>
+
+    label{
+        font-weight: bold;
+        display: block;
+        
+    }
+    input{
+            height: 2em;
+            width: 300px;
+    }
+
+    body{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        
+
+    }
+    .form-container{
+        background-color: #E0E0E0;
+        border: 3px solid black;
+        padding: 30px;
+        width: 400px;
+        margin: 100px auto;
+        height: 650px;
+        border-radius: 10px;
+    }
+
+    h2{
+        text-align: center;
+    }
+    .form-group{
+        margin-bottom: 1em;
+
+    }
+
+    .button-simpan input {
+        background-color: #757575;
+        color: white;
+        width: 60px;
+        margin-top: 1em;
+        margin-right: 10px;
+        float: left;
+    }
+
+    .button-batal input {
+        background-color: red;
+        color: white;
+        width: 60px;
+        margin-top: 1em;
+        float: left;
+    }
+
+    select{
+        width: 35%;
+        height: 2em;
+
+    }
+</style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>FORM ENTRY DATA PEGAWAI</h2>
+        <form menthod="post" action="">
+
+    <div class="form-group">    
+        <label for="nik">NIK</label>
+        <input type="text" id="nik">
+    </div>
+
+    <div class="form-group">    
+        <label for="nama">NAMA</label>
+        <input type="text" id="nama" >
+    </div>
+
+    <div class="form-group">    
+        <label for="tmptlhr">Tempat Lahir</label>
+        <input type="text" id="tmptlhr">
+    </div>
+    
+    <div class="form-group">    
+        <label for="tglahir">Tanggal Lahir</label>
+        <input type="text" id="tglahir">
+    </div>
+
+    <div class="form-group">    
+        <label for="notelepon">No Telepon</label>
+        <input type="text" id="notelepon">
+    </div>
+
+    <div class="form-group"></div>    
+        <label for="alamat">Alamat</label>
+        <textarea name="alamat" id="alamat" cols="30" rows="3"> 
+        </textarea>
+    
+    <div class="form-group"></div>    
+        <label for="jabatan">Jabatan</label>
+        <select name="jabatan" id="jabatan">
+        <option value="1">Jabatan Terbaru</option>
+    </select>
+
+    <div class="form-group"></div>    
+        <label for="status">Status Terbaru</label>
+        <select name="status" id="status">
+        <option value="1">Status Terbaru</option>
+    </select>
+    
+    <div class="button">    
+        <div class="button-simpan">
+            <input type="submit" value="Simpan">
+        </div>
+
+    <div class="button-batal">
+            <input type="submit" value="batal">
+            </div>
+        </div>
+    
+</div>
+</body>
+</html>
